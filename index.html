@@ -5,10 +5,11 @@
 		<button onclick="show('WardCunningham')">ward</button><br>
 		<button onclick="show('PatCunningham')">pat</button>
 	<td>
-		<iframe src="https://wiki.c2.com"></iframe>
+		<iframe id=wiki src="https://wiki.c2.com"></iframe>
 </table>
 <script>
   function show(title) {
     console.log(title)
+    wiki.src = `https://wiki.c2.com?${title}`
   }
 </script>
