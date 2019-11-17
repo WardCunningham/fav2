@@ -1,14 +1,15 @@
 <html>
-<h3>Fav2 Demo App</h3>
-<table border=1 width=100%><tr>
-  <td>
-    <button onclick="show('WardCunningham')">ward</button><br>
-    <button onclick="show('PatCunningham')">pat</button>
-  <td>
-    <iframe id=wiki src="https://wiki.c2.com"></iframe>
-</table>
-<script>
-  function show(title) {
-    wiki.src = `https://wiki.c2.com?${title}`
-  }
-</script>
+  <h3>Fav2 Demo App</h3>
+  <table border=1><tr>
+    <td>
+      <button onclick="show('WardCunningham')">ward</button><br>
+      <button onclick="show('PatCunningham')">pat</button>
+    <td>
+      <iframe id=wiki src="https://wiki.c2.com"></iframe>
+  </table>
+  <script>
+    function show(title) {
+      wiki.src = `https://wiki.c2.com?${title}`
+    }
+  </script>
+</html>
